@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'Century Gothic';
+}
+#chat{
+	width: 80%;
+	margin-left: 10%;
+}
+#chat-screen{
+	padding: 1em;
+	width: 100%;
+	border:3px solid #333;
+	margin-bottom: 1em;
+}
+#input{
+	display: flex;
+	justify-content: space-between;
+}
+#input *{
+	flex-grow: 1;
+}
+#chat-screen div p{
+	background-color: #eee;
+	border-radius: 1em;
+	padding: .7em;
+}
+#chat-screen div p.own{
+	background-color: red;
+	position: relative;
+	left: 100%;
+	transform: translateX(-100%);
+}
